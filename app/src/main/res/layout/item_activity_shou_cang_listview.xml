@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/item_activity_shou_cang_listview_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:id="@+id/item_activity_shou_cang_listview_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_below="@id/item_activity_shou_cang_listview_title_textview">
+        <TextView
+            android:id="@+id/item_activity_shou_cang_listview_source_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="source"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"/>
+        <TextView
+            android:id="@+id/item_activity_shou_cang_listview_creat_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="create_time"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/item_activity_shou_cang_listview_wap_thumb_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

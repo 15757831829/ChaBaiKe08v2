@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_fragment_tt_title_textview"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/item_fragment_tt_description_textview"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:padding="5dp"
+        android:layout_below="@id/item_fragment_tt_title_textview"/>
+    <LinearLayout
+        android:id="@+id/item_fragment_tt_linearlayout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_below="@id/item_fragment_tt_description_textview">
+        <TextView
+            android:id="@+id/item_fragment_tt_source_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="source"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"/>
+        <TextView
+            android:id="@+id/item_fragment_tt_nickname_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nickname"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/item_fragment_tt_creat_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="create_time"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/item_fragment_tt_wap_thumb_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

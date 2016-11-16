@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/activity_main_back_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/searchbackbtn"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="茶百科"
+            android:textSize="25sp"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/activity_main_home_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/righttopbutton"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#0f0">
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btnSearch"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@mipmap/gosearch"/>
+
+        <RelativeLayout android:id="@+id/rlSearchFrameDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/btnSearch">
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/searchico"/>
+
+            <EditText android:id="@+id/etSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:singleLine="true"
+                android:background="@mipmap/myedit"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="3dp"
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/ivSearch"
+                android:hint="请输入文字...">
+
+            </EditText>
+
+            <ImageView android:id="@+id/ivDeleteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/deleteico"
+                android:layout_centerInParent="true"
+                android:paddingRight="20dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门搜索：茶"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@mipmap/shoucangjia"
+        android:text="收藏夹"/>
+    <TextView
+        android:id="@+id/tvShouCang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="我的收藏"/>
+    <TextView
+        android:id="@+id/tvJilu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="浏览记录"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@mipmap/shoucangjia"
+        android:text="关于"/>
+    <TextView
+        android:id="@+id/tvBanQuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="版权信息"/>
+    <TextView
+        android:id="@+id/tvYiJian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="意见反馈"/>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0f0"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/contentactivity_title_textview"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="title"
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/contentactivity_autor_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="autor"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"/>
+            <WebView
+                android:id="@+id/contentactivity_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </WebView>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/contentactivity_back_imageview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/contentback" />
+        <ImageView
+            android:id="@+id/contentactivity_shoucang_imageview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@mipmap/collectcontent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
